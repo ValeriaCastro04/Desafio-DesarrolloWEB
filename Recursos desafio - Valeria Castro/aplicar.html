@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bolsa de trabajo ESEN</title>
+	<link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+	<header>
+		<div class="envoltorio">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo2.png" title="logo" height="42px" /></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertas.html">Ofertas</a></li>
+					<li><a href="consejos.html">Consejos</a></li>
+					<li class="activo"><a href="aplicar.html">Aplicar</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<article class="ofertas">
+			<div class="envoltorio">
+				<form action="aplicar.php" method="post" class="formulario">
+					<label for="nombre" class="">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" required>
+					<br>
+					<label for="apellido">Apellido:</label>
+					<input type="text" name="apellido" id="apellido" required>
+					<br>
+					<label for="carnet">Carnet:</label>
+					<input type="text" name="carnet" id="carnet" required>
+					<br>
+					<label for="departamento">Departamento de residencia:</label>
+					<select name="departamento" id="departamento" required>
+						<option value="">Selectione su departamento</option>
+						<option value="ahuachapan">Ahucachapán</option>
+						<option value="santa-ana">Santa Ana</option>
+						<option value="sonso">Sonsonate</option>
+						<option value="chalate">Chalatenango</option>
+						<option value="sivar">San Salvador</option>
+						<option value="la-libertad">La Libertad</option>
+						<option value="cuscatlan">Cuscatlán</option>
+						<option value="san-vicente">San Vicente</option>
+						<option value="cabañas">Cabañas</option>
+						<option value="la-paz">La Paz</option>
+						<option value="usulutan">Usulután</option>
+						<option value="san-miguel">San Miguel</option>
+						<option value="la-union">La Unión</option>
+					</select>
+					<br>
+					<label for="edad">Edad:</label>
+					<input type="number" name="edad" id="edad" min="18" max="100" required>
+					<br>
+					<label for="genero">Género:</label>
+					<div class="radio-type">
+						<div class="opcion-genero">
+							<input type="radio" name="genero" id="masculino" value="masculino" required>
+							<label for="masculino">Masculino</label>
+						</div>
+						<div class="opcion-genero">
+							<input type="radio" name="genero" id="femenino" value="femenino" required>
+							<label for="femenino">Femenino</label>
+						</div>
+					</div>
+					<br>
+					<label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
+					<input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento" required>
+					<br>
+					<label for="telefono">Número de teléfono:</label>
+					<input type="tel" name="telefono" id="telefono" pattern="[0-9]{8}" required>
+					<br>
+					<label for="carrera">Carrera:</label>
+					<select name="carrera" id="carr'" required>
+						<option value="">Seleccione su carrera</option>
+						<option value="software">Ingeniería de Software y Negocios Digitales</option>
+						<option value="derecho">Licenciatura en Ciencias Jurídicas</option>
+						<option value="eco">Licenciatura en Economía y Negocios</option>
+						<option value="negocios">Ingeniería de Negocios</option>
+					</select>
+					<br>
+					<label for="salario">Pretención salarial (en $):</label>
+					<input type="number" name="salario" id="salario" required>
+					<br>
+					<input type="submit" name="enviar" value="Enviar Aplicación">
+				</form>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>Creado por: Valeria Patricia Castro Mejia - 20235057</p>
+	</footer>
+</body>
+</html>
+
